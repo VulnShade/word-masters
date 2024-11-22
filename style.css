@@ -1,0 +1,105 @@
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.title h1 {
+    font-size: 50px;
+    margin: 15px;
+}
+
+.game-board {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.center {
+    border-top: 3px solid black;
+    padding-top: 30px;
+}
+
+.word {
+    display: flex;
+}
+
+.letter {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid rgb(189, 186, 186);
+}
+
+.infobar {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.spiral {
+    font-size: 40px;
+    display: block;
+    animation: spin 0.5s infinite linear;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes rainbow {
+    100%,
+    0% {
+      color: rgb(255, 0, 0);
+    }
+    8% {
+      color: rgb(255, 127, 0);
+    }
+    16% {
+      color: rgb(255, 255, 0);
+    }
+    25% {
+      color: rgb(127, 255, 0);
+    }
+    33% {
+      color: rgb(0, 255, 0);
+    }
+    41% {
+      color: rgb(0, 255, 127);
+    }
+    50% {
+      color: rgb(0, 255, 255);
+    }
+    58% {
+      color: rgb(0, 127, 255);
+    }
+    66% {
+      color: rgb(0, 0, 255);
+    }
+    75% {
+      color: rgb(127, 0, 255);
+    }
+    83% {
+      color: rgb(255, 0, 255);
+    }
+    91% {
+      color: rgb(255, 0, 127);
+    }
+  }
+
+  .winner {
+    animation: rainbow 4s infinite linear;
+  }
+
+  .red-border {
+    border: 3px solid red;
+    transition: border 0.3s ease-in-out;
+}
