@@ -18,7 +18,7 @@ Each guess must be a valid word.
 ## 🕹️ **How to Play**
 1. Open the game and start guessing the Word of the Day.
 2. Enter a valid 5-letter word.
-3. Press the "Submit" button or hit "Enter."
+3. Press "Enter."
 4. Observe the color-coded feedback for your guess:
    - **Green**: Correct letter and correct position.
    - **Yellow**: Correct letter but wrong position.
